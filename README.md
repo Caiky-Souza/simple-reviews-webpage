@@ -3,7 +3,7 @@ This is a interactive reviews webpage made with HTML5 and CSS3, for improvement 
 This project is a solution for the devchallenge reviews page. 
 
 Check it by yourself!
-Live deploy: 
+Live deploy: https://caiky-souza.github.io/simple-reviews-webpage/
 
 ![thumbnail.jpg](thumbnail.jpg)
 ## Functionalities
