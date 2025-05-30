@@ -1,0 +1,133 @@
+/* Import font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap');
+
+/* General containers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #FAFAF9;
+    font-size: 1rem;
+    font-family: "Sora",sans-serif;
+    height: 100vh;
+}
+main {
+    display:flex;
+    flex-direction: row;
+
+    width: 90%;
+    margin:100px auto;
+    gap:70px;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    width: 50%;
+}
+.container > p {
+    font-size: 1.2rem;
+    line-height: 35px;
+}
+.container:last-of-type {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". card1 card1"
+    "card2 card2 .";
+    font-size:1rem;
+}
+.card {
+    border-radius: 15px;
+    background-color: white;
+    line-height: 30px;
+    padding:30px;
+    transition: 0.5s;
+    box-shadow: 5px 5px 10px rgba(179, 177, 177, 0.219);
+}
+.card:hover {
+    transform: scale(115%);
+}
+.card1{
+    
+    grid-area: card1;
+}
+.card2{
+    grid-area: card2;
+}
+
+
+/* Specific items */
+span {
+    font-size: 25px;
+}
+.card1 > p:first-of-type, .card2 > p:first-of-type {
+    color:black;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.star {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    background-color:#F5C044;
+    border-radius: 50px;
+}
+p,li {
+    color: #52525A;
+}
+li {
+    margin-bottom:10px;
+}
+ul {
+    list-style:none;
+    font-size:0.85rem;
+}
+.check {
+    position:relative;
+    transform: translateY(7px);
+    width:25px;
+    margin-right: 5px;
+}
+.author-info {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 16px;
+    color: rgb(55, 65, 81);
+}
+
+.author-info a {
+    text-decoration: none;
+}
+@media (max-width: 640px)
+{
+    * {
+        font-size:0.8rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    main {
+        flex-wrap: wrap;
+        width:98%;
+        flex-direction: column;
+        align-items: center;
+        margin: 35px auto;
+        gap:40px;
+    }
+    .card:hover {
+        transform: scale(90%);
+    }
+    .container {
+        width:95%;
+    }
+    .container:last-of-type {
+        display:flex;
+        flex-direction: column;
+    }
+}
