@@ -21,5 +21,6 @@ Live deploy: https://caiky-souza.github.io/simple-reviews-webpage/
 - SEO improvement
 - Images acessibility with alt tag
 - CSS3 Grid and Flexbox usage.
+- Also uses BoxShadow function
 
 
